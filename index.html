@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>İlçe Bulucu</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="f-group">
+            <label for="">Ülke</label>
+            <select name="slct1" id="slct1" onchange="countryToCity(this.id,'slct2')">
+                <option value="">-- Ülke Seçiniz --</option>
+                <option value="turkiye">Türkiye</option>
+                <option value="fransa">Fransa</option>
+            </select>
+        </div>
+        <div class="f-group">
+            <label for="">Şehir</label>
+            <select name="slct2" id="slct2" onchange="cityToDistrict(this.id,'slct3')">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="f-group">
+            <label for="">İlçe</label>
+            <select name="slct3" id="slct3">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="button">
+        <button type="submit">KAYIT OL</button>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
